@@ -19,7 +19,7 @@ class _InventoryScreenState extends State<InventoryScreen> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _quantityController = TextEditingController();
   final InventoryManager _inventoryManager = InventoryManager();
-  String _message = "";
+  String _message ="";
 
   void _addItem() {
     final String name = _nameController.text.trim();
@@ -38,7 +38,6 @@ class _InventoryScreenState extends State<InventoryScreen> {
     });
   }
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
